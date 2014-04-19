@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Connect 4</string>
+	<string name="tile_blank"></string>
+	<string name="tile_x">x</string>
+	<string name="tile_o">o</string>
+</resources>
