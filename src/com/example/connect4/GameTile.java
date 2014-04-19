@@ -64,36 +64,36 @@ public class GameTile extends android.widget.Button{
 			switch (attr)
 			{
 			case R.styleable.GameTile_neighborN:
-				neighbor = a.getResourceId(i, -1);
+				neighbor = a.getResourceId(attr, -1);
 				NeighborTiles.put("n", neighbor);
 				break;
 			case R.styleable.GameTile_neighborNE:
-				neighbor = a.getResourceId(i, -1);
+				neighbor = a.getResourceId(attr, -1);
 				NeighborTiles.put("ne", neighbor);
 				break;
 			case R.styleable.GameTile_neighborE:
-				neighbor = a.getResourceId(i, -1);
+				neighbor = a.getResourceId(attr, -1);
 				NeighborTiles.put("e", neighbor);
 				break;
 			case R.styleable.GameTile_neighborSE:
-				neighbor = a.getResourceId(i, -1);
+				neighbor = a.getResourceId(attr, -1);
 				NeighborTiles.put("se", neighbor);
 				break;
 			case R.styleable.GameTile_neighborS:
-				neighbor = a.getResourceId(i, -1);
+				neighbor = a.getResourceId(attr, -1);
 				NeighborTiles.put("s", neighbor);
 				break;
 			case R.styleable.GameTile_neighborSW:
-				neighbor = a.getResourceId(i, -1);
-				NeighborTiles.put("w", neighbor);
+				neighbor = a.getResourceId(attr, -1);
+				NeighborTiles.put("sw", neighbor);
 				break;
 			case R.styleable.GameTile_neighborW:
-				neighbor = a.getResourceId(i, -1);
+				neighbor = a.getResourceId(attr, -1);
 				NeighborTiles.put("w", neighbor);
 				break;
 			case R.styleable.GameTile_neighborNW:
-				neighbor = a.getResourceId(i, -1);
-				NeighborTiles.put("ne", neighbor);
+				neighbor = a.getResourceId(attr, -1);
+				NeighborTiles.put("nw", neighbor);
 				break;
 			}
 		}

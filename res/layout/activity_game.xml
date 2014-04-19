@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#0099cc"
-    tools:context="com.example.connect4.GameActivity" >
+    tools:context="com.example.connect4.GameActivity" xmlns:app="http://schemas.android.com/apk/res/com.example.connect4">
 
     <!--
          The primary full-screen view. This can be replaced with whatever view
@@ -38,50 +38,50 @@
             android:showDividers="beginning">
 
             <com.example.connect4.GameTile
-                android:id="@+id/button00"
+                android:id="@id/button00"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank"
-				custom:neighborE="@+id/button10" 
-				custom:neighborSE="@+id/button11"
-				custom:neighborS="@+id/button01"
+				custom:neighborE="@id/button10" 
+				custom:neighborSE="@id/button11"
+				custom:neighborS="@id/button01"
 				/>
 				
             <com.example.connect4.GameTile
-                android:id="@+id/button10"
+                android:id="@id/button10"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank" 
-                custom:neighborE="@+id/button20"
-                custom:neighborSE="@+id/button21"
-                custom:neighborS="@+id/button11"
-                custom:neighborSW="@+id/button01"
+                custom:neighborE="@id/button20"
+                custom:neighborSE="@id/button21"
+                custom:neighborS="@id/button11"
+                custom:neighborSW="@id/button01"
                 custom:neighborW="@id/button00"
                 />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button20"
+                android:id="@id/button20"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank" 
-                custom:neighborE="@+id/button30"
-                custom:neighborSE="@+id/button31"
-                custom:neighborS="@+id/button21"
-                custom:neighborSW="@+id/button11"
-                custom:neighborW="@+id/button10"
+                custom:neighborE="@id/button30"
+                custom:neighborSE="@id/button31"
+                custom:neighborS="@id/button21"
+                custom:neighborSW="@id/button11"
+                custom:neighborW="@id/button10"
                 />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button30"
+                android:id="@id/button30"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -89,9 +89,9 @@
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank" 
-                custom:neighborS="@+id/button31"
-                custom:neighborSW="@+id/button21"
-                custom:neighborW="@+id/button20"
+                custom:neighborS="@id/button31"
+                custom:neighborSW="@id/button21"
+                custom:neighborW="@id/button20"
                 />
         </TableRow>
 
@@ -105,69 +105,69 @@
             android:padding="10dp" >
 
             <com.example.connect4.GameTile
-                android:id="@+id/button01"
+                android:id="@id/button01"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank" 
-                custom:neighborN="@+id/button00"
-                custom:neighborNE="@+id/button10"
-                custom:neighborE="@+id/button11"
-                custom:neighborSE="@+id/button12"
-                custom:neighborS="@+id/button02"
+                custom:neighborN="@id/button00"
+                custom:neighborNE="@id/button10"
+                custom:neighborE="@id/button11"
+                custom:neighborSE="@id/button12"
+                custom:neighborS="@id/button02"
                 />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button11"
+                android:id="@id/button11"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank" 
-                custom:neighborN="@+id/button10"
-                custom:neighborNE="@+id/button20"
-                custom:neighborE="@+id/button21"
-                custom:neighborSE="@+id/button22"
-                custom:neighborS="@+id/button12"
-                custom:neighborSW="@+id/button02"
-                custom:neighborW="@+id/button01"
-                custom:neighborNW="@+id/button00"
+                custom:neighborN="@id/button10"
+                custom:neighborNE="@id/button20"
+                custom:neighborE="@id/button21"
+                custom:neighborSE="@id/button22"
+                custom:neighborS="@id/button12"
+                custom:neighborSW="@id/button02"
+                custom:neighborW="@id/button01"
+                custom:neighborNW="@id/button00"
                 />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button21"
+                android:id="@id/button21"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank"
-                custom:neighborN="@+id/button20"
-                custom:neighborNE="@+id/button30"
-                custom:neighborE="@+id/button31"
-                custom:neighborSE="@+id/button32"
-                custom:neighborS="@+id/button22"
-                custom:neighborSW="@+id/button12"
-                custom:neighborW="@+id/button11"
-                custom:neighborNW="@+id/button10"
+                custom:neighborN="@id/button20"
+                custom:neighborNE="@id/button30"
+                custom:neighborE="@id/button31"
+                custom:neighborSE="@id/button32"
+                custom:neighborS="@id/button22"
+                custom:neighborSW="@id/button12"
+                custom:neighborW="@id/button11"
+                custom:neighborNW="@id/button10"
                  />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button31"
+                android:id="@id/button31"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank" 
-                custom:neighborN="@+id/button30"
-                custom:neighborS="@+id/button32"
-                custom:neighborSW="@+id/button22"
-                custom:neighborW="@+id/button21"
-                custom:neighborNW="@+id/button20"
+                custom:neighborN="@id/button30"
+                custom:neighborS="@id/button32"
+                custom:neighborSW="@id/button22"
+                custom:neighborW="@id/button21"
+                custom:neighborNW="@id/button20"
                 />
             
         </TableRow>
@@ -182,7 +182,7 @@
             android:padding="10dp" >
 
             <com.example.connect4.GameTile
-                android:id="@+id/button02"
+                android:id="@id/button02"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -190,14 +190,14 @@
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank"
                 custom:neighborN="@id/button01" 
-                custom:neighborNE="@+id/button11"
-                custom:neighborE="@+id/button12"
-                custom:neighborSE="@+id/button13"
-                custom:neighborS="@+id/button03"                
+                custom:neighborNE="@id/button11"
+                custom:neighborE="@id/button12"
+                custom:neighborSE="@id/button13"
+                custom:neighborS="@id/button03"                
                 />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button12"
+                android:id="@id/button12"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -205,17 +205,17 @@
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank" 
                 custom:neighborN="@id/button11" 
-                custom:neighborNE="@+id/button21"
-                custom:neighborE="@+id/button22"
-                custom:neighborSE="@+id/button23"
-                custom:neighborS="@+id/button13"                
-                custom:neighborSW="@+id/button03"
-                custom:neighborW="@+id/button02"
-                custom:neighborNW="@+id/button01"
+                custom:neighborNE="@id/button21"
+                custom:neighborE="@id/button22"
+                custom:neighborSE="@id/button23"
+                custom:neighborS="@id/button13"                
+                custom:neighborSW="@id/button03"
+                custom:neighborW="@id/button02"
+                custom:neighborNW="@id/button01"
                 />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button22"
+                android:id="@id/button22"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
@@ -223,28 +223,28 @@
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank" 
                 custom:neighborN="@id/button21"
-                custom:neighborNE="@+id/button31"
-                custom:neighborE="@+id/button32"
-                custom:neighborSE="@+id/button33"
-                custom:neighborS="@+id/button23"              
-                custom:neighborSW="@+id/button13"
-                custom:neighborW="@+id/button12"
-                custom:neighborNW="@+id/button11"
+                custom:neighborNE="@id/button31"
+                custom:neighborE="@id/button32"
+                custom:neighborSE="@id/button33"
+                custom:neighborS="@id/button23"              
+                custom:neighborSW="@id/button13"
+                custom:neighborW="@id/button12"
+                custom:neighborNW="@id/button11"
                 />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button32"
+                android:id="@id/button32"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank"
-                custom:neighborN="@+id/button31" 
-                custom:neighborS="@+id/button33"
-                custom:neighborSW="@+id/button23"
-                custom:neighborW="@+id/button22"
-                custom:neighborNW="@+id/button21"
+                custom:neighborN="@id/button31" 
+                custom:neighborS="@id/button33"
+                custom:neighborSW="@id/button23"
+                custom:neighborW="@id/button22"
+                custom:neighborNW="@id/button21"
                 />
         </TableRow>
 
@@ -258,57 +258,57 @@
             android:padding="10dp" >
 
             <com.example.connect4.GameTile
-                android:id="@+id/button03"
+                android:id="@id/button03"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank"
-                custom:neighborN="@+id/button02" 
-                custom:neighborNE="@+id/button12"
-                custom:neighborE="@+id/button13"
+                custom:neighborN="@id/button02" 
+                custom:neighborNE="@id/button12"
+                custom:neighborE="@id/button13"
                 />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button13"
+                android:id="@id/button13"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank"
-                custom:neighborN="@+id/button12" 
-                custom:neighborNE="@+id/button22"
-                custom:neighborE="@+id/button23"
-                custom:neighborW="@+id/button03"
-                 />
+                custom:neighborE="@id/button23"
+                custom:neighborN="@id/button12"
+                custom:neighborNE="@id/button22"
+                custom:neighborW="@id/button03" 
+                custom:neighborNW="@id/button02" />
 
             <com.example.connect4.GameTile
-                android:id="@+id/button23"
+                android:id="@id/button23"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank"
-                custom:neighborN="@+id/button22" 
-                custom:neighborNE="@+id/button32"
-                custom:neighborE="@+id/button33"
-                custom:neighborW="@+id/button13"
-                custom:neighborNW="@+id/button02"
-                />
+                custom:neighborE="@id/button33"
+                custom:neighborN="@id/button22"
+                custom:neighborNE="@id/button32"
+                custom:neighborW="@id/button13" 
+                custom:neighborNW="@id/button12" />
+
             <com.example.connect4.GameTile
-                android:id="@+id/button33"
+                android:id="@id/button33"
                 style="?android:attr/buttonStyleSmall"
                 android:layout_width="0dp"
                 android:layout_height="wrap_content"
                 android:layout_weight="1"
                 android:onClick="onTileClick"
                 android:text="@string/tile_blank"
-                custom:neighborN="@+id/button32" 
-                custom:neighborW="@+id/button23"
-                custom:neighborNW="@+id/button22"
+                custom:neighborN="@id/button32" 
+                custom:neighborW="@id/button23"
+                custom:neighborNW="@id/button22"
                  />
         </TableRow>
 

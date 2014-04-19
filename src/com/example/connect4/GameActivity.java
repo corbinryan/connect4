@@ -10,6 +10,7 @@ import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 import android.view.MotionEvent;
 import android.view.View;
 import android.webkit.WebView.FindListener;
@@ -68,7 +69,9 @@ public class GameActivity extends Activity {
 
     public void onTileClick(View btnTile){
         String btnText;
+        String dbgMsg = "";
         GameTile thisTile = (GameTile)btnTile;
+        dbgMsg += String.format("onTileClick(): GameTile Id= %d\n", thisTile.getId());
     	if(thisTile.getText() == getResources().getString(R.string.tile_blank))
     	{
             btnText = getResources().getString(R.string.tile_x);
@@ -84,15 +87,19 @@ public class GameActivity extends Activity {
             btnText = getResources().getString(R.string.tile_blank);
     		thisTile.setText(btnText);
     	}
-    	String dir1 = new String("sw");
-    	thisTile.NeighborTiles.get(dir1);
         for(String dir : new String[]{"n", "ne", "e", "se", "s", "sw", "w", "nw"})
         {
-            GameTile neighborTile = (GameTile)findViewById(R.id.button00);
-            if(neighborTile != null)
-            {
-                neighborTile.setText(btnText);
-            }
+        	dbgMsg += String.format("\t%s Id = %d\n", dir, thisTile.NeighborTiles.get(dir));
+        	Integer id = thisTile.NeighborTiles.get(dir);
+        	if(id != null)
+        	{
+        		GameTile neighborTile = (GameTile)findViewById(id);
+        		if(neighborTile != null)
+        		{
+        			neighborTile.setText(btnText);
+        		}
+        	}
         }
+        Log.d(Contants.LOG, dbgMsg);
     }
 }
